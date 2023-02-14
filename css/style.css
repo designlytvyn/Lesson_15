@@ -894,8 +894,9 @@ footer {
         width: 40px;
         height: 40px;
         cursor: pointer;
-        left: 94.5%;
+        left: 91.5%;
         top: 10%;
+        z-index: 3;
     }
     .burg-menu:hover {
         cursor: pointer;
@@ -939,14 +940,18 @@ footer {
 }
 @media (max-width: 480px) {
     .burg-menu {
-        left: 90%;
-        top: -20%;
+        left: 88%;
+        top: 3.5%;
+        z-index: 3;
     }
     .content {
         margin-top: 1100px;
     }
     .content-box {
         justify-content: center;
+    }
+    .content-second p {
+        margin-top: 10px;
     }
     .content .circle {
         top: 290px;
