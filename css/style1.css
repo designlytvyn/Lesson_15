@@ -1,0 +1,213 @@
+.btn {
+    padding: 10px 30px;
+    background-color: blue;
+    color: aqua;
+    border: none;
+    border-radius: 15px;
+    font-size: 36px;
+}
+.btn:hover {
+    background-color: blueviolet;
+    transition-delay: 5s;
+}
+.ibi {
+    width: 100px;
+    height: 50px;
+    background-color: cornflowerblue;
+    transition-duration: 3s;
+    transition-timing-function: ease-in;
+}
+.ibi:hover {
+    width: 500px;
+}
+.animate{
+    border: unset;
+    padding: 10px;
+    background-color: #46b1de;
+    font-size: 24px;
+    cursor: pointer;
+    transition-duration: 1.5s;
+    transition-duration: 3s, 1s;
+    transition-property: color, background-color;
+}
+
+  .animate:hover{
+    color: #fff;
+    background-color: #21576d;
+}
+.animates{
+    position: relative;
+    width: fit-content;
+    padding: 10px;
+    background-color: #46b1de;
+    font-size: 24px;
+    cursor: pointer;}
+  .animates::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0;
+    height: 2px;
+    background-color: red;
+    width: 100%;}
+  .animates::after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    height: 2px;
+    background-color: red;
+    width: 100%;}
+  
+.border{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;}
+  .border::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-color: red;}
+  .border::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background-color: red;
+  }
+  .border::before, 
+.border::after{
+  height: 0;
+  transition-duration: 1s;
+}
+.animates::before, 
+.animates::after{
+  width: 0;
+  transition-duration: 1s;
+}
+.animates:hover.animates::before, 
+.animates:hover.animates::after{
+  width: 100%;
+}
+.border:hover.border::before, 
+.border:hover.border::after{
+  height: 100%;
+}
+.animates{
+    transition-property: color, background-color;
+    transition-delay: 2s, 1700ms;
+    transition-duration: 700ms, 2s;
+   }
+  .animates:hover{
+    color: #fff;
+    background-color: #21576d;
+  }
+body {
+    position: relative;
+}
+
+
+  .square {
+    width: 300px;
+    height: 300px;
+    background-color: coral;
+    position: absolute;
+    top: 300px;
+    left: 200px;
+
+
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-name: simple-animation;
+  }
+  
+
+  @keyframes simple-animation{
+    0% {
+        background-color: darkolivegreen;
+    }
+    25% {
+        background-color: chocolate;
+        left: 500px;
+        transform: scale(0.8);
+    }
+    50% {
+        background-color: coral;
+        transform: scale(o.5) rotate(360deg);
+        top: 600px;
+    }
+    75% {
+        background-color: mediumseagreen;
+        right: 200px;
+        transform: scale(0.8);
+    }
+    100% {
+        background-color: cornflowerblue;
+        border-radius: 50%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ..element {
+    position: absolute;
+    width: 328px;
+    height: 328px;
+    left: 50%;
+    top: 92px;
+    bottom: 0px;
+    border-radius: 50%;
+    transform: translate(-50%);
+}
+.element-menu {
+    position: relative;
+    width: 328px;
+    height: 328px;
+}
+.element_menu_item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    color: #FFFFFF;
+    background-color:#46B1DE ;
+    border-radius: 50%;
+}
+
+
+
+.element_menu_item:nth-child(n+0) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  
+ 
